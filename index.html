@@ -380,7 +380,7 @@ address_lines is an array with each street line seperated by a ,
 
 <!--Get Queries Status section-->
 
-<h2 id='getqueries'>GET a Specific File</h2><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'particle'</span>
+<h2 id='getqueries'>GET Status of all Queries</h2><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'particle'</span>
 
   <span class="n">api</span> <span class="o">=</span> <span class="no">particle</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'token'</span><span class="p">)</span>
   <span class="n">api</span><span class="p">.</span><span class="nf">particle</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -388,7 +388,7 @@ address_lines is an array with each street line seperated by a ,
   
   <span class="n">api</span> <span class="o">=</span> <span class="n">particle</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'token'</span><span class="p">)</span>
   <span class="n">api</span><span class="o">.</span><span class="n">particle</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-  </code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.particlehealth.com/particle-sandbox-api/api/v1/files/{query_id}/{file_id}""</span>
+  </code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.particlehealth.com/particle-sandbox-api/api/v1/queries/"</span>
     <span class="nt">-X</span> GET
     <span class="nt">-H</span> <span class="s2">"Authorization: token"</span>
   </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">particle</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">particle</span><span class="dl">'</span><span class="p">);</span>
