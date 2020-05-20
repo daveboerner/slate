@@ -299,7 +299,7 @@ You must replace <code>token</code> with your personal API key.
 </aside>
 <h1 id='queries'>Demographics</h1>
 
-<h2 id='postdemographics'>POST Demographics</h2>
+<h2 id='postdemographics'>POST Queries</h2>
 
 
 <div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'particle'</span>
@@ -347,26 +347,35 @@ You must replace <code>token</code> with your personal API key.
   </span><span class="p">}</span><span class="w">
 </span><span class="p">]</span><span class="w">
 </span></code></pre></div>
-<p>This endpoint retrieves all kittens.</p>
+<p>POST patient demographics to this endpoint to initiate a network query.</p>
 <h3 id='http-request'>HTTP Request</h3>
-<p><code>GET http://example.com/api/kittens</code></p>
-<h3 id='query-parameters'>Query Parameters</h3>
+<p><code>POST https://api.particlehealth.com/particle-sandbox-api/api/v1/queries</code></p>
+<h3 id='query-parameters'>Query Body</h3>
 <table><thead>
 <tr>
-<th>Parameter</th>
-<th>Default</th>
-<th>Description</th>
+<th>Body</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>include_cats</td>
-<td>false</td>
-<td>If set to true, the result will also include cats.</td>
-</tr>
-<tr>
-<td>available</td>
-<td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
+<td>{
+    "address_city": "Cambridge",
+    "address_lines": [
+      "123 Main St",
+      "Apt 4"
+    ],
+    "address_state": "Massachusetts",
+    "date_of_birth": "1966-01-18",
+    "email": "john@doe.com",
+    "family_name": "Hermiston",
+    "gender": "FEMALE",
+    "given_name": "Ariel",
+    "npi": "9876",
+    "postal_code": "02138",
+    "purpose_of_use": "TREATMENT",
+    "ssn": "123-45-6789",
+    "telephone": "1-234-567-8910"
+  }</td>
+to false, the result will include kittens that have already been adopted.</td>
 </tr>
 </tbody></table>
 
