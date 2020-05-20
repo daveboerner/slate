@@ -23,7 +23,7 @@ Particle Health supports a RESTful Web Service based off the FHIR and CCDA stand
 
 By simply requesting information with a minimum set of demographic parameters, Particle is able to query partner Health Information Networks (data holders), producing aggregated data in a seamless, efficient and HIPAA compliant manner. 
 
-Particle has designed this process with security, simplicity and elegance as central tenets. What took numerous coordinated IHE and RESTful queries across numerous networks has been distilled to a simple API to access data across the health ecosystem - regardless of geographic boundaries or vendor systems. 
+Particle has designed this process with security, simplicity and elegance as central tenets. What took numerous coordinated IHE and RESTful queries across numerous networks has been distilled to a simple API to access data across the health ecosystem - regardless of geographic boundaries or vendor systems.  
 
 # Authentication
 
