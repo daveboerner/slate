@@ -234,13 +234,13 @@
             <a href="#queries" class="toc-h1 toc-link" data-title="Queries">Queries</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#get-all-kittens" class="toc-h2 toc-link" data-title="Get All Kittens">Get All Kittens</a>
+                    <a href="#postdemographics" class="toc-h2 toc-link" data-title="POST Demographics">POST demographics for patient</a>
                   </li>
                   <li>
-                    <a href="#get-a-specific-kitten" class="toc-h2 toc-link" data-title="Get a Specific Kitten">Get a Specific Kitten</a>
+                    <a href="#getzip" class="toc-h2 toc-link" data-title="Get a zip of files">Get a set of documents as a zip</a>
                   </li>
                   <li>
-                    <a href="#delete-a-specific-kitten" class="toc-h2 toc-link" data-title="Delete a Specific Kitten">Delete a Specific Kitten</a>
+                    <a href="#getfile" class="toc-h2 toc-link" data-title="Get a specific file">Get a specific document</a>
                   </li>
               </ul>
           </li>
@@ -418,7 +418,7 @@ address_lines is an array with each street line seperated by a ,
 
 
 
-<h2 id='delete-a-specific-kitten'>GET a Specific File</h2><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'particle'</span>
+<h2 id='getfile'>GET a Specific File</h2><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'particle'</span>
 
 <span class="n">api</span> <span class="o">=</span> <span class="no">particle</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'token'</span><span class="p">)</span>
 <span class="n">api</span><span class="p">.</span><span class="nf">particle</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
