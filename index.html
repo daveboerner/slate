@@ -399,6 +399,9 @@ address_lines is an array with each street line seperated by a ,
   <blockquote>
   <p>The above command returns status of all queries like:</p>
   </blockquote>
+  
+  <pre>{"queries":[{"id":"efc0a1d1-ac42-45f7-9430-d7d7d90632e1","demographics":{"given_name":"Ariel","family_name":"Hermiston","date_of_birth":"1966-01-18","gender":"FEMALE","ssn":"123-45-6789","email":"john@doe.com","address_lines":["123 Main St","Apt 4"],"address_state":"Massachusetts","address_city":"Cambridge","postal_code":"02138","telephone":"(234) 567-8910","npi":"9876","purpose_of_use":"TREATMENT"},"state":"COMPLETE"},{"id":"ea6d77a5-306a-4271-b13a-e16052c00862","demographics":{"given_name":"Ariel","family_name":"Hermiston","date_of_birth":"1966-01-18","gender":"FEMALE","ssn":"123-45-6789","email":"john@doe.com","address_lines":["123 Main St","Apt 4"],"address_state":"Massachusetts","address_city":"Cambridge","postal_code":"02138","telephone":"(234) 567-8910","npi":"9876","purpose_of_use":"TREATMENT"},"state":"COMPLETE"}}</pre>
+
   <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
     </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
     </span><span class="nl">"deleted"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">":("</span><span class="w">
@@ -407,8 +410,7 @@ address_lines is an array with each street line seperated by a ,
   <p>This endpoint returns the status of all queries.</p>
   <h3 id='http-request-4'>HTTP Request</h3>
   <p><code>GET https://api.particlehealth.com/particle-sandbox-api/api/v1/queries/</code></p>
-  <h3 id='url-parameters-3'>URL Parameters</h3>
-  
+
 
 <!--Get a Zip section-->
 
